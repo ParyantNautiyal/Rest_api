@@ -62,7 +62,7 @@ app.post('/customer', function (req, res) {
 
 //rest api to update record into mysql database
 app.put('/customer', function (req, res) {
-   connection.query('UPDATE `customer` SET `Name`=?,`Address`=?,`Country`=?,`Phone`=? where `Id`=?', [req.body.Name,req.body.Address, req.body.Country, req.body.Phone, req.body.Id], function (error, results, fields) {
+   connection.query('UPDATE `customer` SET `Name`=?,`Address`=?,`Country`=?,`Phone`=?,'CHECK_IN'=? where `Id`=?', [req.body.Name,req.body.Address, req.body.Country, req.body.Phone, req.body.Id,req.body,CHECK_IN], function (error, results, fields) {
 	  if (error) throw error;
 	  res.end(JSON.stringify(results));
 	});
