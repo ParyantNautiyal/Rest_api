@@ -1,0 +1,19 @@
+{
+  "name": "v12.16.2-linux-x64",
+  "version": "1.0.0",
+  "description": "Mounty-drive-assihnment 2020",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "paryant nautiyal",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  }
+}
